@@ -1,3 +1,5 @@
+[![GitHub last commit](https://img.shields.io/github/last-commit/ricardozambon/devops-markdown-text-control?logo=github&logoColor=white)](https://github.com/RicardoZambon/devops-markdown-text-control) [![Semantic-Release](https://github.com/RicardoZambon/devops-markdown-text-control/workflows/Semantic-Release/badge.svg)](https://github.com/RicardoZambon/devops-markdown-text-control/actions?query=workflow%3ASemantic-Release) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/ricardozambon/devops-markdown-text-control?logo=github&logoColor=white)](https://github.com/RicardoZambon/devops-markdown-text-control/releases) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Visual Studio Marketplace](https://img.shields.io/badge/Visual%20Studio%20Marketplace-purple?logo=visual-studio&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=Ricardo-Zambon.devops-markdown-text-control)
+
 # Azure DevOps Extension: Markdown Text Control
 
 Azure DevOps extension to show text field control and markdown in same row.
