@@ -4,7 +4,7 @@
     "publisher": "Ricardo-Zambon",
     "version": "0.0.0",
     "name": "Markdown Text Control",
-    "description": "A custom control to display markdown data",
+    "description": "Extension to show text field control and markdown in same row",
     "public": false,
     "categories": [ "Azure Boards" ],
     "scopes": ["vso.work", "vso.work_write"],
@@ -50,7 +50,6 @@
                     {
                         "id": "FieldName",
                         "name": "Field",
-                        "description": "The field associated with the control.",
                         "type": "WorkItemField",
                         "properties": {
                             "workItemFieldTypes": ["String"]
@@ -63,7 +62,6 @@
                     {
                         "id": "Markdown",
                         "name": "Markdown",
-                        "description": "Enter markdown",
                         "inputMode": "TextArea",
                         "validation": {
                             "dataType": "String",
@@ -73,7 +71,6 @@
                     {
                         "id": "Script",
                         "name": "Value Converter Script",
-                        "description": "Enter script",
                         "inputMode": "TextArea",
                         "validation": {
                             "dataType": "String",

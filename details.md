@@ -1,18 +1,18 @@
 # Azure DevOps Extension: Markdown Text Control
 
-Azure DevOps extension to show text field control and markdown in same row.
+<img src="./static/images/Example.png" style="border: 1px solid black;" /> 
 
-[Learn how to build your own custom control for the work item form.](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/custom-control)
+Azure DevOps extension to show text field control and markdown in same row.
 
 ## Extension Usage
 
-Navigate to your work item form customization page and add a markdown text control.
+Navigate to your work item form customization page, click to ***Add custom control*** and select the control **Markdown Text Control**.
 
-[print]
+![Layout Customization](./static/images/Print1.jpg)
 
-Edit the control so it can use the right field and markdown.
+In ***Options*** tab, set the control *field*, *markdown* and a *value converter script* (if required).
 
-[print]
+![Configuration](./static/images/Print2.jpg)
 
 * **Field** *(required)*: The field should be used by control;
 
@@ -43,12 +43,12 @@ Edit the control so it can use the right field and markdown.
 
 ## Source code
 
-The source for this extension can be found on Github - feel free to take, fork and extend.
+The [source](https://github.com/RicardoZambon/devops-markdown-text-control) for this extension can be found on Github - feel free to take, fork and extend.
 
-You can also learn how to build your own custom control extension for the work item form here.
+You can also learn how to build your own custom control extension for the work item form [here](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/custom-control).
 
 ## Feedback
 We need your feedback! Here are some ways to connect with us:
 
 * Add a review below.
-* Report issues in GitHub.
+* Report issues in [GitHub](https://github.com/RicardoZambon/devops-markdown-text-control).
