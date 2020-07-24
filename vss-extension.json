@@ -1,19 +1,41 @@
 {
     "manifestVersion": 1,
     "id": "devops-markdown-text-control",
-    "publisher": "RicardoZambon",
-    "version": "1.0.33",
+    "publisher": "Ricardo-Zambon",
+    "version": "0.0.0",
     "name": "Markdown Text Control",
     "description": "A custom control to display markdown data",
     "public": false,
-    "categories": ["Azure Repos"],
+    "categories": [ "Plan and track" ],
     "scopes": ["vso.work", "vso.work_write"],
+    "icons": {
+        "default": "static/images/MarketplaceLogo.png"
+    },
+    "links": {
+        "learn": {
+            "uri": "https://github.com/RicardoZambon/devops-markdown-text-control/blob/master/README.md"
+        },
+        "support": {
+            "uri": "https://github.com/RicardoZambon/devops-markdown-text-control"
+        },
+        "repository": {
+            "uri": "https://github.com/RicardoZambon/devops-markdown-text-control"
+        },
+        "issues": {
+            "uri": "https://github.com/RicardoZambon/devops-markdown-text-control/issues"
+        }
+    },
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services.Cloud"
         }
     ],
-    "tags": ["Work Item", "Work Item form", "Work item form custom control"],
+    "content": {
+        "details": {
+            "path": "details.md"
+        }
+    },
+    "tags": [ "Work Item", "Work Item control", "Work Item form", "Work item form custom control", "Work item field" ],
     "contributions": [
         {
             "id": "markdown-form-control",

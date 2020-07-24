@@ -1,8 +1,16 @@
 {
-  "author": "",
+  "name": "devops-markdown-text-control",
+  "version": "0.0.0-development",
+  "author": "Ricardo Zambon",
   "scripts": {
     "build": "tsc",
-    "publish": "npm run build && tfx extension create"
+    "publish": "npm run build && tfx extension create",
+    "semantic-release": "semantic-release",
+    "cz": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RicardoZambon/devops-markdown-text-control.git"
   },
   "dependencies": {
     "@types/jquery": "^3.5.0",
@@ -11,7 +19,75 @@
     "vss-web-extension-sdk": "^5.141.0"
   },
   "devDependencies": {
+    "@google/semantic-release-replace-plugin": "^1.0.0",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.7",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "cz-conventional-changelog": "^3.2.0",
+    "semantic-release": "^17.1.1",
     "tfx-cli": "^0.8.1",
     "typescript": "^3.9.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@google/semantic-release-replace-plugin",
+        {
+          "replacements": [
+            {
+              "files": [
+                "vss-extension.json"
+              ],
+              "from": "\"version\": \".*\"",
+              "to": "\"version\": \"${nextRelease.version}\"",
+              "results": [
+                {
+                  "file": "vss-extension.json",
+                  "hasChanged": true,
+                  "numMatches": 1,
+                  "numReplacements": 1
+                }
+              ],
+              "countMatches": true
+            }
+          ]
+        }
+      ],
+      "@semantic-release/git",
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "npm run publish"
+        }
+      ],
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            [
+              "*.vsix"
+            ],
+            {
+              "name": "devops-markdown-text-control-${nextRelease.gitTag}.zip",
+              "label": "DevOps Markdown Text Control ${nextRelease.gitTag}"
+            }
+          ]
+        }
+      ]
+    ],
+    "branches": [
+      "master"
+    ]
   }
 }
