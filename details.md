@@ -1,6 +1,6 @@
 # Azure DevOps Extension: Markdown Text Control
 
-<img src="static/images/Example.png" style="border: 1px solid black;" /> 
+![Example](static/images/Example.jpg)
 
 Azure DevOps extension to show text field control and markdown in same row.
 

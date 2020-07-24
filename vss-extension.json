@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "devops-markdown-text-control",
     "publisher": "Ricardo-Zambon",
-    "version": "1.0.2",
+    "version": "0.0.0",
     "name": "Markdown Text Control",
     "description": "Extension to show text field control and markdown in same row",
     "public": false,
