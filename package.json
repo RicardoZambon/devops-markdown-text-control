@@ -63,7 +63,14 @@
           ]
         }
       ],
-      "@semantic-release/git",
+			[
+				"@semantic-release/git",
+				{
+					"assets": [
+						"vss-extension.json"
+					]
+				}
+			],
       [
         "@semantic-release/exec",
         {
@@ -80,7 +87,7 @@
             ],
             {
               "path": "*.vsix",
-              "name": "devops-markdown-text-control-${nextRelease.gitTag}.zip",
+              "name": "devops-markdown-text-control-${nextRelease.gitTag}.vsgit pix",
               "label": "DevOps Markdown Text Control ${nextRelease.gitTag}"
             }
           ]

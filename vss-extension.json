@@ -6,7 +6,7 @@
     "name": "Markdown Text Control",
     "description": "A custom control to display markdown data",
     "public": false,
-    "categories": [ "Plan and track" ],
+    "categories": [ "Azure Boards" ],
     "scopes": ["vso.work", "vso.work_write"],
     "icons": {
         "default": "static/images/MarketplaceLogo.jpg"
