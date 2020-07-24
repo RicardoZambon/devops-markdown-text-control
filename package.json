@@ -1,0 +1,17 @@
+{
+  "author": "",
+  "scripts": {
+    "build": "tsc",
+    "publish": "npm run build && tfx extension create"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.0",
+    "@types/q": "^1.5.4",
+    "markdown-it": "^11.0.0",
+    "vss-web-extension-sdk": "^5.141.0"
+  },
+  "devDependencies": {
+    "tfx-cli": "^0.8.1",
+    "typescript": "^3.9.7"
+  }
+}

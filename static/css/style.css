@@ -1,0 +1,68 @@
+input, select, textarea, button {
+    color: inherit;
+    font-size: 14px !important;
+}
+
+.control {
+    display: flex;
+    flex-direction: row;
+}
+
+.work-item-control {
+    width: 100%;
+    padding-left: 1px;
+    padding-right: 3px;
+}
+
+.combo {
+    position: relative;
+    width: 100%;
+    background: var(--background-color,rgba(255, 255, 255, 1));
+    background-color: rgba(var(--palette-neutral-0,255, 255, 255),1);
+    border: 0px;
+    padding: 0 8px;
+    height: 2em;
+    border: 1px solid;
+    border-color: transparent;
+}
+
+.combo>div.wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    display: block;
+    padding-left: 2px;
+    width: 100%;
+}
+
+.combo div.wrap>input[type=text] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.work-item-form-main .combo input, .work-item-form-main .mru-identity-picker input {
+    text-overflow: ellipsis;
+}
+
+.work-item-form-main .combo input, .work-item-form-main .mru-identity-picker input {
+    font-size: 14px;
+}
+
+
+.combo:hover:not(.readonly) {
+    border-color: rgba(var(--palette-neutral-8,234, 234, 234),1) !important;
+}
+
+.combo.focus:not(.readonly) {
+    border-color: var(--communication-background,rgba(0, 120, 212, 1)) !important;
+}
+
+.markdown-control {
+    width: auto;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+
+<head>
+    <meta charset="utf-8" />
+    
+    <script src="../markdown-it.js"></script>
+
+	<script src="../lib/VSS.SDK.min.js"></script>
+    
+	<title>Hit Count Control</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body style="height:100%">
+	<script>
+        VSS.init({
+            explicitNotifyLoaded: true,
+            usePlatformScripts: true,
+            usePlatformStyles: true, 
+            configureModuleLoader: true,
+            applyTheme: true
+        });
+
+        // Load main entry point for extension 
+        VSS.require(["dist/app"], function () {
+            // loading succeeded
+            VSS.notifyLoadSucceeded();
+        });
+    </script>
+</body>
+
+</html>

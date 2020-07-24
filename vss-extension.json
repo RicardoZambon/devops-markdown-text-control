@@ -1,0 +1,86 @@
+{
+    "manifestVersion": 1,
+    "id": "devops-markdown-text-control",
+    "publisher": "RicardoZambon",
+    "version": "1.0.33",
+    "name": "Markdown Text Control",
+    "description": "A custom control to display markdown data",
+    "public": false,
+    "categories": ["Azure Repos"],
+    "scopes": ["vso.work", "vso.work_write"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services.Cloud"
+        }
+    ],
+    "tags": ["Work Item", "Work Item form", "Work item form custom control"],
+    "contributions": [
+        {
+            "id": "markdown-form-control",
+            "type": "ms.vss-work-web.work-item-form-control",
+            "description": "A markdown text control for work item form.",
+            "targets": ["ms.vss-work-web.work-item-form"],
+            "properties": {
+                "name": "Markdown Text Control",
+                "uri": "static/index.html",
+                "height": 50,
+                "inputs": [
+                    {
+                        "id": "FieldName",
+                        "name": "Field",
+                        "description": "The field associated with the control.",
+                        "type": "WorkItemField",
+                        "properties": {
+                            "workItemFieldTypes": ["String"]
+                        },
+                        "validation": {
+                            "dataType": "String",
+                            "isRequired": true
+                        }
+                    },
+                    {
+                        "id": "Markdown",
+                        "name": "Markdown",
+                        "description": "Enter markdown",
+                        "inputMode": "TextArea",
+                        "validation": {
+                            "dataType": "String",
+                            "isRequired": true
+                        }
+                    },
+                    {
+                        "id": "Script",
+                        "name": "Value Converter Script",
+                        "description": "Enter script",
+                        "inputMode": "TextArea",
+                        "validation": {
+                            "dataType": "String",
+                            "isRequired": false
+                        }
+                    }
+
+                ]
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "dist",
+            "addressable": true
+        },
+        {
+            "path": "static",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        },
+        {
+            "path": "node_modules/markdown-it/dist",
+            "addressable": true,
+            "packagePath": "/"
+        }
+    ]
+}
