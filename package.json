@@ -87,7 +87,7 @@
             ],
             {
               "path": "*.vsix",
-              "name": "devops-markdown-text-control-${nextRelease.gitTag}.vsgit pix",
+              "name": "devops-markdown-text-control-${nextRelease.gitTag}.vsix",
               "label": "DevOps Markdown Text Control ${nextRelease.gitTag}"
             }
           ]
