@@ -1,6 +1,6 @@
 # Azure DevOps Extension: Markdown Text Control
 
-<img src="./static/images/Example.png" style="border: 1px solid black;" /> 
+<img src="static/images/Example.png" style="border: 1px solid black;" /> 
 
 Azure DevOps extension to show text field control and markdown in same row.
 
@@ -8,11 +8,11 @@ Azure DevOps extension to show text field control and markdown in same row.
 
 Navigate to your work item form customization page, click to ***Add custom control*** and select the control **Markdown Text Control**.
 
-![Layout Customization](./static/images/Print1.jpg)
+![Layout Customization](static/images/Print1.jpg)
 
 In ***Options*** tab, set the control *field*, *markdown* and a *value converter script* (if required).
 
-![Configuration](./static/images/Print2.jpg)
+![Configuration](static/images/Print2.jpg)
 
 * **Field** *(required)*: The field should be used by control;
 
