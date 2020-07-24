@@ -25,4 +25,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         
       - name: Upload to Visual Studio Marketplace
+        if: ${{ env.VERSION != '' }}
         run: tfx extension publish --token ${{ secrets.VS_MARKETPLACE }}
