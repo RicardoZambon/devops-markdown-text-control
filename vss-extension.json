@@ -9,7 +9,7 @@
     "categories": [ "Plan and track" ],
     "scopes": ["vso.work", "vso.work_write"],
     "icons": {
-        "default": "static/images/MarketplaceLogo.png"
+        "default": "static/images/MarketplaceLogo.jpg"
     },
     "links": {
         "learn": {
