@@ -30,6 +30,11 @@
             "id": "Microsoft.VisualStudio.Services.Cloud"
         }
     ],
+    "content": {
+        "details": {
+            "path": "details.md"
+        }
+    },
     "tags": [ "Work Item", "Work Item control", "Work Item form", "Work item form custom control", "Work item field" ],
     "contributions": [
         {
