@@ -28,7 +28,6 @@
     "@semantic-release/release-notes-generator": "^9.0.1",
     "cz-conventional-changelog": "^3.2.0",
     "semantic-release": "^17.1.1",
-    "tfx-cli": "^0.8.1",
     "typescript": "^3.9.7"
   },
   "config": {

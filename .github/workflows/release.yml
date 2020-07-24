@@ -17,7 +17,7 @@ jobs:
         run: npm ci
 
       - name: Install tfx-cli
-        run: npm install -g tfx-cli
+        run: sudo npm install -g tfx-cli
         
       - name: Release
         run: npx semantic-release
