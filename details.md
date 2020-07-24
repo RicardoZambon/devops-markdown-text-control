@@ -1,6 +1,6 @@
 # Azure DevOps Extension: Markdown Text Control
 
-![Example](static/images/Example.jpg)
+![Example](static/images/Example.png)
 
 Azure DevOps extension to show text field control and markdown in same row.
 
