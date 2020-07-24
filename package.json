@@ -79,6 +79,7 @@
               "*.vsix"
             ],
             {
+              "path": "*.vsix",
               "name": "devops-markdown-text-control-${nextRelease.gitTag}.zip",
               "label": "DevOps Markdown Text Control ${nextRelease.gitTag}"
             }
