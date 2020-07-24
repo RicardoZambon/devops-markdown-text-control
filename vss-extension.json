@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "devops-markdown-text-control",
     "publisher": "Ricardo-Zambon",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "name": "Markdown Text Control",
     "description": "A custom control to display markdown data",
     "public": false,
