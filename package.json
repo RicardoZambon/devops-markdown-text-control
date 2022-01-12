@@ -15,7 +15,7 @@
   "dependencies": {
     "@types/jquery": "^3.5.0",
     "@types/q": "^1.5.4",
-    "markdown-it": "^11.0.0",
+    "markdown-it": "^12.3.2",
     "vss-web-extension-sdk": "^5.141.0"
   },
   "devDependencies": {
